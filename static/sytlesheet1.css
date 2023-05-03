@@ -1,10 +1,4 @@
-/* This is a comment */
 /* General syntax of CSS (Cascading Style Sheet) */
-
-/* selector {
-    property:value;
-    another_property:another:value
-} */
 
 h1 {
     color:darkslateblue
@@ -13,15 +7,42 @@ h1 {
 p {
     color:cadetblue
 }
+body {
+	text-align: center;
+	background-color: lavender;
+	font-family: 'Courier New', Courier, monospace;
+}
 
 /* Changing the style by accessing the class attribute of tag . */
 
 .input-placeholder {
     max-width: 150px;
-    background-color:rgb(82, 93, 102);
+    background-color:rgb(203, 194, 226);
 }
+
 
 .input-placeholder:hover {
     background-color: palevioletred;
     box-shadow: 3px 3px 6px;
+}
+
+/* Style the radio buttons as a set of "either or" buttons */
+input[type="radio"] {
+    display: none; /* Hide the radio button */
+  }
+  
+.radio-label {
+display: inline-block;
+margin: 0 10px; /* Add some spacing between the labels */
+padding: 10px;
+font-size: 18px;
+color: #555;
+background-color: #eee;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type="radio"]:checked + .radio-label {
+background-color: #514780;
+color: #fff;
 }

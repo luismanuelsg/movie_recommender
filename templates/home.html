@@ -10,16 +10,18 @@
 </head>
 <body>
     <h1>Welcome to the naive recommender</h1>
-    <p>Rate on a scale 0-5 🌟 the following movie:</p>
+    <p>Rate on a scale 0-5 ⭐ the following movies:</p>
     <form action="/results">
         2001: A Space Odyssey (1968) :<input class="input-placeholder" type="text" name="2001: A Space Odyssey (1968)" placeholder="0-5"><br>
         American Psycho (2000) :<input class="input-placeholder" type="text" name="American Psycho (2000)" placeholder="0-5"><br>
         Almost Famous (2000) :<input class="input-placeholder" type="text" name="Almost Famous (2000)" placeholder="0-5"><br>
-        <input type="radio" id="nmf" name="recommender_type" value="NMF">
-        <label for="nmf">NMF</label><br>
-        <input type="radio" id="cos_sim" name="recommender_type" value="Cos_Sim">
-        <label for="cos_sim">Cosine similarity</label><br>
-        <input type="submit" value="Submit">
+        <p>Choose one of the following algorithms:</p>
+
+        <input type="radio" id="nmf" name="recommender_type" value="NMF" checked onclick="this.form.submit()">
+        <label for="nmf" class="radio-label">NMF</label>
+        
+        <input type="radio" id="cos_sim" name="recommender_type" value="Cos_Sim" onclick="this.form.submit()">
+        <label for="cos_sim" class="radio-label">Cosine Similarity</label>
     </form>
     </p>
 </body>
