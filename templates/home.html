@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="../static/sytlesheet1.css">
+    <title>Welcome page</title>
+</head>
+<body>
+    <h1>Welcome to the naive recommender</h1>
+    <p>Rate on a scale 0-5 🌟 the following movie:</p>
+    <form action="/results">
+        2001: A Space Odyssey (1968) :<input class="input-placeholder" type="text" name="2001: A Space Odyssey (1968)" placeholder="0-5"><br>
+        American Psycho (2000) :<input class="input-placeholder" type="text" name="American Psycho (2000)" placeholder="0-5"><br>
+        Almost Famous (2000) :<input class="input-placeholder" type="text" name="Almost Famous (2000)" placeholder="0-5"><br>
+        <input type="radio" id="nmf" name="recommender_type" value="NMF">
+        <label for="nmf">NMF</label><br>
+        <input type="radio" id="cos_sim" name="recommender_type" value="Cos_Sim">
+        <label for="cos_sim">Cosine similarity</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    </p>
+</body>
+</html>

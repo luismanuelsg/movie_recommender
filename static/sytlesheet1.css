@@ -1,0 +1,27 @@
+/* This is a comment */
+/* General syntax of CSS (Cascading Style Sheet) */
+
+/* selector {
+    property:value;
+    another_property:another:value
+} */
+
+h1 {
+    color:darkslateblue
+}
+
+p {
+    color:cadetblue
+}
+
+/* Changing the style by accessing the class attribute of tag . */
+
+.input-placeholder {
+    max-width: 150px;
+    background-color:rgb(82, 93, 102);
+}
+
+.input-placeholder:hover {
+    background-color: palevioletred;
+    box-shadow: 3px 3px 6px;
+}
